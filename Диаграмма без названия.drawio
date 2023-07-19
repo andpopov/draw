@@ -1,9 +1,64 @@
-<mxfile host="app.diagrams.net" modified="2023-07-19T08:47:26.581Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/115.0" version="21.6.3" etag="Co6GIoglNJGjZFGN_7GH" type="github">
+<mxfile host="app.diagrams.net" modified="2023-07-19T09:02:27.721Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/115.0" etag="P9Y8GYPtbaROC-byj1om" version="21.6.3" type="github">
   <diagram name="Страница 1" id="5nrg5drJcTsCp4QF9bKa">
-    <mxGraphModel>
+    <mxGraphModel dx="1434" dy="736" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="2q_SYWjUQPI6YASVnQ3N-1" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Git repository:&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;App config" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="40" y="60" width="100" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="2q_SYWjUQPI6YASVnQ3N-2" value="App 1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="670" y="20" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="2q_SYWjUQPI6YASVnQ3N-3" value="App 2" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="670" y="160" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="2q_SYWjUQPI6YASVnQ3N-4" value="&lt;div&gt;Storage volume:&lt;/div&gt;&lt;div&gt;/var/gitRepo&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.stored_data;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="430" y="100" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2q_SYWjUQPI6YASVnQ3N-5" value="&lt;div&gt;GitRepo synchronizer&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="230" y="80" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="2q_SYWjUQPI6YASVnQ3N-6" value="&lt;div&gt;Read app config&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="2q_SYWjUQPI6YASVnQ3N-4" target="2q_SYWjUQPI6YASVnQ3N-3">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="380" y="169.5" as="sourcePoint" />
+            <mxPoint x="540" y="169.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2q_SYWjUQPI6YASVnQ3N-7" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=1;exitY=0.575;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="2q_SYWjUQPI6YASVnQ3N-1" target="2q_SYWjUQPI6YASVnQ3N-5">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="130" y="229.5" as="sourcePoint" />
+            <mxPoint x="290" y="229.5" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2q_SYWjUQPI6YASVnQ3N-8" value="&lt;div&gt;pull&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="2q_SYWjUQPI6YASVnQ3N-7">
+          <mxGeometry x="0.0026" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2q_SYWjUQPI6YASVnQ3N-9" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;" edge="1" parent="1" source="2q_SYWjUQPI6YASVnQ3N-5" target="2q_SYWjUQPI6YASVnQ3N-4">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="330" y="380" as="sourcePoint" />
+            <mxPoint x="490" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2q_SYWjUQPI6YASVnQ3N-10" value="&lt;div&gt;write&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="2q_SYWjUQPI6YASVnQ3N-9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2q_SYWjUQPI6YASVnQ3N-11" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="2q_SYWjUQPI6YASVnQ3N-4" target="2q_SYWjUQPI6YASVnQ3N-2">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="510" y="120" as="sourcePoint" />
+            <mxPoint x="530" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2q_SYWjUQPI6YASVnQ3N-12" value="&lt;div&gt;Read app config&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="2q_SYWjUQPI6YASVnQ3N-11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
